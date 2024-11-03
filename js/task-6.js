@@ -12,12 +12,10 @@ const destroyBtn = controlsContainer.querySelector("[data-destroy]");
 
 createBtn.addEventListener("click", () => {
     const sum = Number(inputNumber.value);
-
     if (sum < 1 || sum > 100) {
         alert("Enter a number from 1 to 100!");
         return;
     }
-
     createBox(sum);
     inputNumber.value = "";  
 });
@@ -34,7 +32,6 @@ function createBox(sum) {
         box.style.backgroundColor = getRandomHexColor();
         newBoxes.push(box);
     }
-
     containerBox.innerHTML = "";
     containerBox.append(...newBoxes);
 }

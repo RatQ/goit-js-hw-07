@@ -19,16 +19,16 @@ body>div {
 }
 
 #controls {
+    width: 486px;
     margin-bottom: 16px;
     gap: 16px;
-    width: 486px;
 }
 
 #boxes {
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
     min-width: 486px;
-    justify-content: center;
-    flex-wrap: wrap;
 }
 
 button {
@@ -54,12 +54,12 @@ button[data-destroy] {
 }
 
 input {
+    width: 150px;
+    height: 40px;
     border: 1px solid #808080;
     border-radius: 8px;
     padding: 8px;
     text-align: center;
-    width: 150px;
-    height: 40px;
     line-height: 1.5;
     letter-spacing: 0.04em;
 }
